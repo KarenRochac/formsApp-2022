@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="borda">
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label type="name">Nome: </ion-label>
+        <ion-input placeholder="insira seu nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label type="">CPF: </ion-label>
+        <ion-input placeholder="XXX-XXX-XXX-XX"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label type="email">Email: </ion-label>
+        <ion-input placeholder="insira seu email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Senha: </ion-label>
+        <ion-input placeholder="insira sua senha" type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Confirmar senha: </ion-label>
+        <ion-input placeholder="insira sua senha" type="password"></ion-input>
+      </ion-item>
+    </ion-list><hr>
+    <div class="ion-justify-content-around">
+      <ion-grid >
+        <ion-row  >
+          <ion-col ize="12" size-sm>
+            <ion-button  routerLink="/tabs/tab1">voltar</ion-button></ion-col>
+          <ion-col ize="12" size-sm>
+            <ion-button color="success" routerLink="/tabs/tab1">salvar</ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-card>
+</ion-content>
