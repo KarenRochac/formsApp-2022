@@ -1,43 +1,54 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>
+      <ion-icon name="person-outline"></ion-icon> Login
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
-  <div>
-    <ion-list>
-      <ion-item>
-        <ion-label type="email">Email: </ion-label>
-        <ion-input placeholder="insira seu email"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Senha: </ion-label>
-        <ion-input placeholder="insira sua senha" type="password"></ion-input>
-      </ion-item>
-
-      <ion-label>
-        <a href="" class="ion-justify-content-end">Esqueceu sua a senha?</a>
-      </ion-label>
-    </ion-list>
-
-
-
     <div>
-      <ion-grid >
-        <ion-row class="ion-justify-content-around">
-          <ion-col ize="12" size-sm>
+      <ion-list>
+        <ion-item>
+          <ion-label type="email">Email: </ion-label>
+          <ion-input placeholder="insira seu email"></ion-input>
+        </ion-item>
 
-            <ion-button routerLink="/tabs/tab1">Voltar</ion-button></ion-col>
-          <ion-col ize="12" size-sm>
-            <ion-button  routerLink="/registro">Registrar</ion-button></ion-col>
+        <ion-item>
+          <ion-label>Senha: </ion-label>
+          <ion-input placeholder="insira sua senha" type="password"></ion-input>
+        </ion-item>
+
+        <ion-label style="margin-left: 12px;">
+          <a href="" class="ion-justify-content-end">Esqueceu sua a senha?</a>
+        </ion-label>
+      </ion-list>
+
+
+
+      <div>
+        <ion-grid>
+          <ion-row class="ion-justify-content-around">
             <ion-col ize="12" size-sm>
-              <ion-button  routerLink="/tabs/tab2">Entrar</ion-button></ion-col>
-        </ion-row>
-      </ion-grid>
+
+              <ion-button routerLink="/tabs/tab1">
+                <ion-icon name="chevron-back-outline"></ion-icon> Voltar
+              </ion-button>
+            </ion-col>
+            <ion-col ize="12" size-sm>
+              <ion-button routerLink="/registro">
+                <ion-icon name="add-outline"></ion-icon> Registrar
+              </ion-button>
+            </ion-col>
+            <ion-col ize="12" size-sm>
+              <ion-button routerLink="/tabs/tab2">
+                <ion-icon name="log-in-outline"></ion-icon>Entrar
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     </div>
-  </div>
-</ion-card>
+  </ion-card>
 </ion-content>
